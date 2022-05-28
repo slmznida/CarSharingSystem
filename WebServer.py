@@ -13,9 +13,11 @@ class WebServer:
             Initialize flask object and a python dictionary
         """
         self.app = Flask(__name__)
-        self.host = 'localhost'
-        self.url = 'https://localhost:5000'
+        #self.host = 'localhost'
+        #self.url = 'https://localhost:5000'
         self.users = []
+        self.server = Flask(__name__)
+        #self.app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP], server=server)
 
     def requests(self):
         @self.app.route('/', methods=['GET'])
