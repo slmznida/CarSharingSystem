@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+/*Araçlar Başlangıç*/
+/*header*/
+.header{
+    background: #000;
+}
+.header .row{
+    margin-top: 70px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.register-btn{
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+/*header sonu*/
+
+        .wrapper {
+            padding: 5px;
+            max-width: 1500px;
+            width: 95%;
+            margin: 20px auto;
+            max-height: 600px
+        }
+
+        .columns {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin: 5px 0;
+            max-height: 600px;
+        }
+
+        .column {
+            flex: 1;
+            border: 1px solid gray;
+            margin: 2px;
+            padding: 10px;
+            width: 200px;
+            max-height: 400px;
+        }
+
+        .columnMap {
+            flex: 1;
+            border: 1px solid gray;
+            margin: 2px;
+            padding: 10px;
+            width: 600px;
+            max-height: 400px;
+        }
+
+        .columnDirection {
+            flex: 1;
+            border: 1px solid gray;
+            margin: 2px;
+            padding: 10px;
+            width: 400px;
+            max-height: 400px;
+            overflow: scroll;
+        }
+
+
+        @media screen and (max-width: 980px) {
+            .columns .column {
+                margin-bottom: 5px;
+                flex-basis: 40%;
+            }
+        }
+
+        @media screen and (max-width: 680px) {
+            .columns .column {
+                flex-basis: 100%;
+                margin: 0 0 5px 0;
+            }
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2{
+            text-align: center;
+            margin-right: 50px;
+            margin-top: 20px;
+        }
+        h3{
+            padding-left: 10px;
+            font-size: 22px;
+            text-align: center;
+            margin-right: 50px;
+            margin-top: 20px;
+            padding-bottom: 10px;  
+        }
+
+        .button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button2 {
+            display: inline-block;
+            margin-left: 85px;
+            width: 230px;
+            background-color: #ff523b;
+            color: white;
+            border: 2px solid #ff523b;
+            border-radius: 30px;
+            transition: background 0.5s;
+            margin-top: 40px;
+        }
+        .button3{
+            display: inline-block;
+            margin-left: 85px;
+            width: 230px;
+            background-color: #ff523b;
+            color: white;
+            border: 2px solid #ff523b;
+            border-radius: 30px;
+            transition: background 0.5s;
+        }
+
+        .button2:hover {
+            background-color: #563434;
+            color: white;
+        }
+
+        .overflow {
+            max-height: 600px;
+        }
+        
+/*Footer*/
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container1{
+    text-align: center;
+    padding: 0 7%;
+}
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 10px 0 20px;
+}
+ul{
+    list-style-type: none;
+}
+/*Footer sonu*/

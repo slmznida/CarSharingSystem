@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Araç Paylaşımı</title>
+        <link rel="stylesheet" href="/static/giriş.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+<!--header-->
+<div class="header">
+    <nav>
+        <img src="/static/logo.png" class="logo">
+        <ul class="nav-links" >
+            <li><a href="/">Anasayfa</a></li>
+            <li><a href="harita">Araç Bul</a></li>
+            <li><a href="#">Biz Kimiz?</a></li>
+            <li><a href="#">Bize Ulaşın</a></li>
+        </ul>
+        <a href="giriş" class="register-btn">Giriş</a>
+    </nav>
+</div>
+<!--içerik-->
+<div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="text" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log In</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="email" class="input-field" placeholder="Email" required>
+            <input type="text" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</div>
+<!--footer-->
+        <div class="footer">
+            <div class="container1">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Araç paylaşımı sistemini cebinize taşıyoruz! <br> Yeni uygulamamız çok yakında <br> Google Play ve Apple Store'da.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Bizi Takip Edin!</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <script>
+             var x = document.getElementById("login")
+             var y = document.getElementById("register")
+             var z = document.getElementById("btn")
+             function register(){
+                 x.style.left = "-400px";
+                 y.style.left = "50px";
+                 z.style.left = "110px";
+             }
+             function login(){
+                 x.style.left = "50px";
+                 y.style.left = "450px";
+                 z.style.left = "0";
+             }
+         </script>
+    </body>
+</html>

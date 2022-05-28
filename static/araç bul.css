@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+/*Araçlar Başlangıç*/
+/*header*/
+.header{
+    background: #000;
+}
+.header .row{
+    margin-top: 70px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.register-btn{
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/*İçerik*/
+.container{
+    padding: 0 7%;
+}
+.list-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left-col{
+    flex-basis: 70%;
+}
+.right-col{
+    flex-basis: 70%;
+}
+.left-col h1{
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.car{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+.car-img{
+    flex-basis: 40%;
+}
+.car-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+.car-info{
+    flex-basis: 58%;
+    color: #555;
+}
+.car-info a{
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    margin: 4px 0;
+}
+.car-info i{
+    color: #ff5361;
+    font-size: 18px;
+    margin: 10px 1px;
+}
+.car-price{
+    text-align: right;
+}
+.car-price h4{
+    font-size: 16px;
+}
+.car-price h4 span{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/*Footer*/
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container1{
+    text-align: center;
+    padding: 0 7%;
+}
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 10px 0 20px;
+}
+ul{
+    list-style-type: none;
+}
+/*Footer sonu*/
+
+/*Araç sayfası*/
+.rov{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 h1{
+    font-size: 24px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.deneme{
+    padding-top: 20px;
+}
+.deneme p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000;
+    font-weight: 900;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #563434;
+}
+.small-btn{
+    display: inline-block;
+    background: black;
+    color: #fff;
+    padding: 6px 6px;
+    margin: 10px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+    font-size: 12px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.single-product select{
+    font-size: 14px;
+    border: 1px solid #ff523b;
+}
+.single-product select:focus{
+    outline: none;
+}
+.single-product input{
+    width: 50px;
+    font-size: 14px;
+    border: 1px solid #ff523b;
+}
+.single-product input:focus{
+    outline: none;
+}
+.col-2 i{
+    color: #ff5361;
+    font-size: 14px;
+}
+.line{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px 0 40px;
+}
+.map{
+    margin: 30px 0;
+}
+.map iframe{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.map h4{
+    font-size: 26px;
+}

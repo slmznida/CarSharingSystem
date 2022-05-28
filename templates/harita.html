@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title> </title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-1.7-development-only.js"></script>
+    <link rel="stylesheet" href="/static/yol.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--header-->
+    <div class="header">
+        <nav>
+            <img src="/static/logo.png" class="logo">
+            <ul class="nav-links" >
+                <li><a href="/">Anasayfa</a></li>
+                <li><a href="harita">Araç Bul</a></li>
+                <li><a href="#">Biz Kimiz?</a></li>
+                <li><a href="#">Bize Ulaşın</a></li>
+            </ul>
+            <a href="giriş" class="register-btn">Giriş</a>
+        </nav>
+    </div>
+    <!--header sonu-->
+    <div class="wrapper">
+        <header>
+            <h1>Araçlarımız</h1>
+        </header>
+        <section class="columns">
+
+            <div class="column">
+                <h2>Araç Menüsü</h2>
+                <button class="button button2" id="All School" onclick="tumYakit()"> Tüm Araçlar </button>
+                <button class="button button2" id="Benzin" onclick="turYakit(this.id)"> Benzinli Araç </button>
+                <button class="button button2" id="Motorin" onclick="turYakit(this.id)"> Motorinli Araç </button>
+            </div>
+
+            <div class="columnMap">
+                <div id='myMap' style='width: 400px; height: 400px;'></div>
+                <script type='text/javascript' src="/static/arabalar.js"></script>
+                <script type='text/javascript' src="/static/yol.js"></script>
+                <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AkgH3ebYWOUmhwfx4kXc_Yn84Wz6g-resdxO_p0XmXY1f0Iz_m-jSs5wcHDFRUrA&callback=loadMapScenario' async defer></script>
+                <br>
+                
+                <p id="errorMSG"> </p>
+
+            </div>
+
+            <div class="columnDirection">
+
+                <h3>Yol Tarifi</h3>
+                <div id='directionsItinerary'></div>
+                <div style="align-items: center"> <button class="button button3" style="align-self: center" id="All School" onclick="clearDirection()">Temizle</button></div>
+
+            </div>
+
+        </section>
+
+    </div>
+    <!--footer-->
+        <div class="footer">
+            <div class="container1">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Araç paylaşımı sistemini cebinize taşıyoruz! <br> Yeni uygulamamız çok yakında <br> Google Play ve Apple Store'da.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Bizi Takip Edin!</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+    <!--footer sonu-->
+</body>
+</html>
